@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI;AACJ,IAAI,CAAC,CAAC,CAAC;EACP,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,cAAc,EAAE,GAAG;EACnB,kBAAkB,EAAE,UAAU;EAC9B,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,mBAAmB;CAC/B",
+    "sources": [
+        "main.scss",
+        "_reset.scss",
+        "_form.scss",
+        "_layout.scss",
+        "_button.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
