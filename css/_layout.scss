@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    " heads heads heads "
+    " hero hero hero"
+    " . blocks . "
+    " . about . "
+    " . testimonials . "
+    " . experience . "
+    " . service . "
+    " contacts contacts contacts";
+    grid-template-columns: 1fr 1200px 1fr;
+}

@@ -1,0 +1,44 @@
+header {
+    display: grid;
+    grid-area: heads;
+}
+
+.hero {
+    display: grid;
+    grid-area: hero;
+}
+
+main {
+    display: grid;
+    grid-area: blocks;
+}
+
+.about {
+    display: grid;
+    grid-area: about;
+
+}
+
+.testimonials {
+    display: grid;
+    grid-area: testimonials;
+
+}
+
+.experience {
+    display: grid;
+    grid-area: experience;
+
+}
+
+.service {
+    display: grid;
+    grid-area:service;
+
+}
+
+footer {
+    display: grid;
+    grid-area: contacts;
+
+}
