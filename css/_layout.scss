@@ -1,3 +1,6 @@
+$yellowColor: #f6b501;
+$kelioniuBlack: #1d1d1d;
+
 body {
     display: grid;
     grid-template-areas: 
@@ -8,6 +11,6 @@ body {
     " . testimonials . "
     " . experience . "
     " . service . "
-    " contacts contacts contacts";
+    " contacts contacts contacts ";
     grid-template-columns: 1fr 1200px 1fr;
 }
