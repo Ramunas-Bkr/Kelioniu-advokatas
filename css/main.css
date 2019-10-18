@@ -8,179 +8,88 @@ body * {
   font-family: 'Saira', sans-serif;
 }
 
-body {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: " heads heads heads " " hero hero hero" " . blocks . " " . about . " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
-  -ms-grid-columns: 1fr 1200px 1fr;
-      grid-template-columns: 1fr 1200px 1fr;
-}
-
 header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: heads;
-      grid-template-areas: " img . links . ";
-  -ms-grid-columns: 20% 40% 30% 10%;
-      grid-template-columns: 20% 40% 30% 10%;
-  -ms-grid-rows: 60px;
-      grid-template-rows: 60px;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
   background-color: #f6b501;
+  height: 70px;
 }
 
 header img {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: img;
+  display: inline-block;
   height: 40px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  padding-left: 60px;
+  margin: 15px 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
 }
 
-header .links {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: links;
-  -ms-grid-row-align: center;
-      align-self: center;
-      grid-template-areas: " apie atsiliepimai patirtis kontaktai";
+header nav {
+  display: inline-block;
+  float: right;
+  margin-right: 60px;
+  margin-top: 25px;
 }
 
-header .links .apie {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: apie;
+header nav .headers-links {
+  margin-right: 20px;
   text-decoration: none;
   font-size: 20px;
+  line-height: 20px;
   font-weight: 600;
-  cursor: pointer;
   color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+  position: relative;
 }
 
-header .links .atsiliepimai {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: atsiliepimai;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+header nav .headers-links::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-animation-name: width;
+          animation-name: width;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
-header .links .patirtis {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: patirtis;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+@-webkit-keyframes width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-header .links .kontaktai {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: kontaktai;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+@keyframes width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-header .links *:hover {
+header nav .headers-links:hover {
   color: white;
 }
 
-.hero {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: hero;
-}
-
-main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: blocks;
-}
-
-.about {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: about;
-}
-
-.testimonials {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: testimonials;
-}
-
-.experience {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: experience;
-}
-
-.service {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-  grid-area: service;
-}
-
-footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: contacts;
+header nav .headers-links:hover:hover:after {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
