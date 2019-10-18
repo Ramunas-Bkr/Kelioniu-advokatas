@@ -12,7 +12,7 @@ header {
             top: 0;
             left: 0;
             right: 0;
-            z-index: 9;
+            // z-index: 9;
         }
         nav {
             display: inline-block;
@@ -42,18 +42,6 @@ header {
                         left: 0;
                         opacity: 0;
                         transition: opacity 0.5s;
-                        animation-name: width;
-                        animation-iteration-count: infinite;
-                        animation-duration: 2s;
-                        animation-fill-mode: backwards;
-                    }
-                        @keyframes width {
-                            0% {
-                                width: 0;
-                            }
-                            100% {
-                                width: 100%;
-                            }
                         }
                         &:hover {
                             color: white;
@@ -62,3 +50,4 @@ header {
                                 opacity: 1;
                             }
 }}}}
+
