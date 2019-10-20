@@ -8,179 +8,357 @@ body * {
   font-family: 'Saira', sans-serif;
 }
 
-body {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: " heads heads heads " " hero hero hero" " . blocks . " " . about . " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
-  -ms-grid-columns: 1fr 1200px 1fr;
-      grid-template-columns: 1fr 1200px 1fr;
-}
-
 header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: heads;
-      grid-template-areas: " img . links . ";
-  -ms-grid-columns: 20% 40% 30% 10%;
-      grid-template-columns: 20% 40% 30% 10%;
-  -ms-grid-rows: 60px;
-      grid-template-rows: 60px;
-  background-color: #f6b501;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  height: 70px;
 }
 
 header img {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: img;
+  display: inline-block;
   height: 40px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  padding-left: 60px;
+  margin: 15px 60px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-header .links {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: links;
-  -ms-grid-row-align: center;
-      align-self: center;
-      grid-template-areas: " apie atsiliepimai patirtis kontaktai";
+header nav {
+  display: inline-block;
+  float: right;
+  margin-right: 60px;
+  margin-top: 25px;
 }
 
-header .links .apie {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: apie;
+header nav .headers-links {
+  margin-right: 20px;
   text-decoration: none;
   font-size: 20px;
+  line-height: 20px;
   font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+  color: #f6b501;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+  position: relative;
 }
 
-header .links .atsiliepimai {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: atsiliepimai;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
+header nav .headers-links::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-header .links .patirtis {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: patirtis;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
-}
-
-header .links .kontaktai {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: kontaktai;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #1d1d1d;
-  text-align: center;
-  float: right;
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
-}
-
-header .links *:hover {
+header nav .headers-links:hover {
   color: white;
 }
 
+header nav .headers-links:hover:hover:after {
+  opacity: 1;
+}
+
+.sticky {
+  background-color: #f6b501;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.sticky .headers-links {
+  color: #1d1d1d;
+}
+
 .hero {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: hero;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+  background-image: url(../img/hero.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
 }
 
-main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: blocks;
+.hero h2 {
+  display: inline-block;
+  width: 70%;
+  color: #f6b501;
+  font-size: 40px;
+  padding-top: 200px;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
-.about {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: about;
+.hero h1 {
+  display: inline-block;
+  width: 70%;
+  color: #f6b501;
+  font-size: 60px;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
-.testimonials {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: testimonials;
+.hero .arrows {
+  display: inline-block;
+  width: 100%;
+  margin-top: 150px;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
-.experience {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: experience;
+.hero .arrows a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #f6b501;
+  font-size: 50px;
 }
 
-.service {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-  grid-area: service;
+.hero .arrows .arrow1 {
+  -webkit-animation-name: opacity3;
+          animation-name: opacity3;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
-footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: contacts;
+@-webkit-keyframes opacity1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .2;
+  }
+  20% {
+    opacity: .4;
+  }
+  30% {
+    opacity: .6;
+  }
+  40% {
+    opacity: .8;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .2;
+  }
+  20% {
+    opacity: .4;
+  }
+  30% {
+    opacity: .6;
+  }
+  40% {
+    opacity: .8;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero .arrows .arrow2 {
+  -webkit-animation-name: opacity2;
+          animation-name: opacity2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .6;
+  }
+  60% {
+    opacity: .8;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .2;
+  }
+  40% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .6;
+  }
+  60% {
+    opacity: .8;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero .arrows .arrow3 {
+  -webkit-animation-name: opacity1;
+          animation-name: opacity1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes opacity3 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .2;
+  }
+  60% {
+    opacity: .4;
+  }
+  70% {
+    opacity: .6;
+  }
+  80% {
+    opacity: .8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity3 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .2;
+  }
+  60% {
+    opacity: .4;
+  }
+  70% {
+    opacity: .6;
+  }
+  80% {
+    opacity: .8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
