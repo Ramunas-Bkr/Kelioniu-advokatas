@@ -1,3 +1,31 @@
+@mixin main-blocks ($number) {
+    display: grid;
+    grid-area: $number;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, .5);
+    text-align: center;
+    transition: transform 1s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .main-images {
+            overflow: hidden;
+        }
+        h3 {
+            color: $yellowColor;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            margin: 15px 5px;
+        } 
+        p {
+            color: $kelioniuBlack;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 10px 5px;
+        }}
+
+
 .first-grid {
     display: grid;
     grid-template-areas: 
@@ -7,11 +35,25 @@
     " . experience . "
     " . service . "
     " contacts contacts contacts ";
-    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-columns: 1fr 1100px 1fr;
 
     main {
         display: grid;
         grid-area: blocks;
+        grid-template-areas: 
+        " block1 . block2 . block3 ";
+        grid-template-columns: 1fr 40px 1fr 40px 1fr;
+        margin: 50px 0;
+
+            .block1 {
+                @include main-blocks(block1);
+            }
+            .block2 {
+                @include main-blocks(block2);
+            }
+            .block3 {
+                @include main-blocks(block3);
+            }
     }
     .about {
         display: grid;
