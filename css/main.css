@@ -8,6 +8,63 @@ body * {
   font-family: 'Saira', sans-serif;
 }
 
+.first-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: " . blocks . " " . about . " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
+  -ms-grid-columns: 1fr 1200px 1fr;
+      grid-template-columns: 1fr 1200px 1fr;
+}
+
+.first-grid main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: blocks;
+}
+
+.first-grid .about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: about;
+}
+
+.first-grid .testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: testimonials;
+}
+
+.first-grid .experience {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: experience;
+}
+
+.first-grid .service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: service;
+}
+
+.first-grid footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: contacts;
+}
+
 header {
   display: inline-block;
   width: 100%;
