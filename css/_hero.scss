@@ -41,9 +41,9 @@
                 font-size: 50px;
             }
             .arrow1 {
-                    animation-name: opacity1;
+                    animation-name: opacity3;
                     animation-iteration-count: infinite;
-                    animation-duration: 3s;
+                    animation-duration: 2s;
                         @keyframes opacity1 {
                             0% {
                                 opacity: 0;
@@ -67,96 +67,96 @@
                                 opacity: 1;
                             }
                             70% {
-                                opacity: .8;
+                                opacity: 1;
                             }
                             80% {
-                                opacity: .6;
+                                opacity: 1;
                             }
                             90% {
-                                opacity: .4;
+                                opacity: 1;
                             }
                             100% {
-                                opacity: .2;
+                                opacity: 1;
                             }
                         }
             }
             .arrow2 {
                 animation-name: opacity2;
                 animation-iteration-count: infinite;
-                animation-duration: 3s;
+                animation-duration: 2s;
                     @keyframes opacity2 {
                         0% {
-                            opacity: .2;
+                            opacity: 0;
                         }
                         10% {
-                            opacity: .4;
+                            opacity: 0;
                         }
                         20% {
-                            opacity: .6;
+                            opacity: 0;
                         }
                         30% {
-                            opacity: .8;
+                            opacity: .2;
                         }
                         40% {
-                            opacity: 1;
+                            opacity: .4;
                         }
                         50% {
-                            opacity: 1;
+                            opacity: .6;
                         }
                         60% {
                             opacity: .8;
                         }
                         70% {
-                            opacity: .6;
+                            opacity: 1;
                         }
                         80% {
-                            opacity: .4;
+                            opacity: 1;
                         }
                         90% {
-                            opacity: .2;
+                            opacity: 1;
                         }
                         100% {
-                            opacity: 0;
+                            opacity: 1;
                         }
                     }
             }
             .arrow3 {
-                animation-name: opacity3;
+                animation-name: opacity1;
                 animation-iteration-count: infinite;
-                animation-duration: 3s;
+                animation-duration: 2s;
                     @keyframes opacity3 {
                         0% {
-                            opacity: .4;
-                        }
-                        10% {
-                            opacity: .6;
-                        }
-                        20% {
-                            opacity: .8;
-                        }
-                        30% {
-                            opacity: 1;
-                        }
-                        40% {
-                            opacity: 1;
-                        }
-                        50% {
-                            opacity: .8;
-                        }
-                        60% {
-                            opacity: .6;
-                        }
-                        70% {
-                            opacity: .4;
-                        }
-                        80% {
-                            opacity: .2;
-                        }
-                        90% {
                             opacity: 0;
                         }
-                        100% {
+                        10% {
+                            opacity: 0;
+                        }
+                        20% {
+                            opacity: 0;
+                        }
+                        30% {
+                            opacity: 0;
+                        }
+                        40% {
+                            opacity: 0;
+                        }
+                        50% {
                             opacity: .2;
+                        }
+                        60% {
+                            opacity: .4;
+                        }
+                        70% {
+                            opacity: .6;
+                        }
+                        80% {
+                            opacity: .8;
+                        }
+                        90% {
+                            opacity: 1;
+                        }
+                        100% {
+                            opacity: 1;
                         }
                     }
         }
