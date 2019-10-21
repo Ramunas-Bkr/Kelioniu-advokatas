@@ -4,6 +4,7 @@ header {
     position: fixed;
     // background-color: $yellowColor;
     height: 70px;
+    z-index: 9;
 
         img {
             display: inline-block;
@@ -53,7 +54,10 @@ header {
 
 .sticky {
     background-color: $yellowColor;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        img {
+            box-shadow:  0 2px 6px 0 rgba(0, 0, 0, 0.6);
+        }
         .headers-links{
             color: $kelioniuBlack;
     }}
