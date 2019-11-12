@@ -53,7 +53,7 @@ body * {
 }
 
 .first-grid main .block1 h3 {
-  color: #f6b501;
+  color: #4162dd;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -92,7 +92,7 @@ body * {
 }
 
 .first-grid main .block2 h3 {
-  color: #f6b501;
+  color: #4162dd;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -131,7 +131,7 @@ body * {
 }
 
 .first-grid main .block3 h3 {
-  color: #f6b501;
+  color: #4162dd;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -151,6 +151,54 @@ body * {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: about;
+      grid-template-areas: ". about-us"  "about-photo about-text" "about-photo btn2";
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.first-grid .about .about-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: about-us;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  color: #f6b501;
+}
+
+.first-grid .about .about-photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: about-photo;
+  width: inherit;
+  height: auto;
+  align-self: flex-start;
+}
+
+.first-grid .about .about-text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: about-text;
+  color: #1d1d1d;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+.first-grid .about btn2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: btn2;
+  align-self: flex-start;
 }
 
 .first-grid .testimonials {
@@ -187,10 +235,11 @@ body * {
 }
 
 .btn {
-  background-color: #f6b501;
-  color: #1d1d1d;
+  background-color: #4162dd;
+  text-align: center;
+  color: white;
   margin: 30px 80px;
-  padding: 10px 30px;
+  padding: 10px 0px;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
@@ -202,6 +251,28 @@ body * {
 }
 
 .btn:hover {
+  background-color: #000;
+  -webkit-box-shadow: 5px 5px 10px #rgba 0, 0, 0, 0.5;
+          box-shadow: 5px 5px 10px #rgba 0, 0, 0, 0.5;
+}
+
+.btn2 {
+  background-color: #4162dd;
+  text-align: center;
+  color: #1d1d1d;
+  padding: 10px 30px;
+  margin: 0px 240px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: background-color, -webkit-box-shadow 0.7s;
+  transition: background-color, -webkit-box-shadow 0.7s;
+  transition: background-color, box-shadow 0.7s;
+  transition: background-color, box-shadow 0.7s, -webkit-box-shadow 0.7s;
+  cursor: pointer;
+}
+
+.btn2:hover {
   background-color: #000;
   color: #f6b501;
   -webkit-box-shadow: 5px 5px 10px #rgba 0, 0, 0, 0.5;
@@ -238,7 +309,7 @@ header nav .headers-links {
   font-size: 20px;
   line-height: 20px;
   font-weight: 600;
-  color: #f6b501;
+  color: white;
   -webkit-transition: color .5s ease;
   transition: color .5s ease;
   position: relative;
@@ -267,7 +338,7 @@ header nav .headers-links:hover:hover:after {
 }
 
 .sticky {
-  background-color: #f6b501;
+  background-color: #1d1d1d;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
@@ -278,7 +349,7 @@ header nav .headers-links:hover:hover:after {
 }
 
 .sticky .headers-links {
-  color: #1d1d1d;
+  color: white;
 }
 
 .hero {
@@ -296,7 +367,7 @@ header nav .headers-links:hover:hover:after {
 .hero h2 {
   display: inline-block;
   width: 70%;
-  color: #f6b501;
+  color: white;
   font-size: 40px;
   padding-top: 200px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
@@ -305,7 +376,7 @@ header nav .headers-links:hover:hover:after {
 .hero h1 {
   display: inline-block;
   width: 70%;
-  color: #f6b501;
+  color: white;
   font-size: 60px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }

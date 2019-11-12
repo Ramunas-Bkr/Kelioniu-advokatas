@@ -28,7 +28,7 @@ header {
                     font-size: 20px;
                     line-height: 20px;
                     font-weight: 600;
-                    color: $yellowColor;
+                    color: white;
                     transition: color .5s ease;
                     position: relative;
                 
@@ -53,11 +53,11 @@ header {
 }}}}
 
 .sticky {
-    background-color: $yellowColor;
+    background-color: $kelioniuBlack;
     box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.5);
         img {
             box-shadow:  0 2px 6px 0 rgba(0, 0, 0, 0.6);
         }
         .headers-links{
-            color: $kelioniuBlack;
+            color: white;
     }}

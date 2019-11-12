@@ -12,7 +12,7 @@
             overflow: hidden;
         }
         h3 {
-            color: $yellowColor;
+            color: $blueColor;
             font-size: 25px;
             font-weight: 600;
             line-height: 30px;
@@ -58,6 +58,40 @@
     .about {
         display: grid;
         grid-area: about;
+        grid-template-areas:
+        ". about-us" 
+        "about-photo about-text"
+        "about-photo btn2";
+        grid-template-columns: 40% 60%;
+            .about-us {
+                display: grid;
+                grid-area: about-us;
+                font-size: 35px;
+                text-align: center;
+                font-weight: 600;
+                color: $yellowColor;
+            }
+            .about-photo {
+                display: grid;
+                grid-area: about-photo;
+                width: inherit;
+                height: auto;
+                align-self: flex-start;
+            }
+            .about-text {
+                display: grid;
+                grid-area: about-text;
+                color: $kelioniuBlack;
+                font-size: 15px;
+                padding-left: 40px;
+                padding-bottom: 30px;
+            }
+            btn2 {
+                display: grid;
+                grid-area: btn2;
+                align-self: flex-start;
+
+            }
     }
     .testimonials {
         display: grid;
