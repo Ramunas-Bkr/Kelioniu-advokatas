@@ -25,12 +25,11 @@
             margin: 10px 5px;
         }}
 
-
 .first-grid {
     display: grid;
     grid-template-areas: 
     " . blocks . "
-    " . about . "
+    " whymy whymy whymy "
     " . testimonials . "
     " . experience . "
     " . service . "
@@ -55,44 +54,58 @@
                 @include main-blocks(block3);
             }
     }
-    .about {
+
+@mixin whyMyBlocks ($area) {
         display: grid;
-        grid-area: about;
+        grid-area: $area;
+        text-align: center;
+        margin-top: 15px;
+        .fa {
+            color: #fff;
+            font-size: 60px;
+        }
+        .clientsTxt {
+            color: #fff;
+            font-size: 24px;
+        }
+        .clientsNumber {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 50px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .whyMy {
+        display: grid;
+        grid-area: whymy;
         grid-template-areas:
-        ". about-us" 
-        "about-photo about-text"
-        "about-photo btn2";
-        grid-template-columns: 40% 60%;
-            .about-us {
+        "whyhead whyhead whyhead whyhead whyhead"
+        ". clients case money .";
+        grid-template-columns: 1fr 20% 20% 20% 1fr;
+        background-color: $blueColor;
+        padding: 30px 0;
+
+            .whyMyHead {
                 display: grid;
-                grid-area: about-us;
+                grid-area: whyhead;
                 font-size: 35px;
                 text-align: center;
                 font-weight: 600;
-                color: $yellowColor;
+                color: #fff;
             }
-            .about-photo {
-                display: grid;
-                grid-area: about-photo;
-                width: inherit;
-                height: auto;
-                align-self: flex-start;
+            .whyMyClients {
+                @include whyMyBlocks (clients);           
             }
-            .about-text {
-                display: grid;
-                grid-area: about-text;
-                color: $kelioniuBlack;
-                font-size: 15px;
-                padding-left: 40px;
-                padding-bottom: 30px;
+            .suitcase {
+                @include whyMyBlocks (case);
             }
-            btn2 {
-                display: grid;
-                grid-area: btn2;
-                align-self: flex-start;
+            .money {
+                @include whyMyBlocks (money);
+            }
+        }
 
-            }
-    }
     .testimonials {
         display: grid;
         grid-area: testimonials;

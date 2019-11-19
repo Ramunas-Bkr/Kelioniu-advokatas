@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kelionių advokatas</title>
+    <link rel = "icon" type = "image/png" href = "./img/Ico.png">
     <link href="https://fonts.googleapis.com/css?family=Saira:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
@@ -49,27 +51,22 @@
                 <div class="btn">Rašyti</div>
             </div>
         </main>
-        <div class="about">
-            <h3 class="about-us">Apie mus</h3>
-            <img class="about-photo" src="./img/main-image-2.jpg" alt="">
-            <div class="about-text">
-                <p>
-                    Dėkojame, kad domitės Advokatų kontoros ADER teisininkų teikiamomis paslaugomis, vertiname ir džiaugiamės
-                    Jūsų skirtu laiku mums. Sistemingai tobulindami įgytas žinias, turėdami unikalios patirties laikome save
-                    klasikines advokatų ir bendražmogiškas vertybes puoselėjančia komanda, gebančia teikti etiškas ir kokybiškas
-                    teisines paslaugas.
-                    <br> Esame IRZ Netzwerk tinklo nariai, kuriam priklauso Rytų ir Vidurio Europos advokatai, atlikę praktiką
-                    Vokietijos advokatų kontorose ir įgiję teorinių bei praktinių Vokietijos teisės žinių, todėl turime puikias
-                    galimybes atstovauti Jūsų interesams arba rekomenduoti Partnerius bet kurioje iš šių šalių.
-                    Esame advokatų kontora, kurios teisininkai daugiau kaip 10 metų specializuojasi turizmo teisėje. 
-                    Kontoros advokatai aktyviai dalyvauja turizmo santykių teisėkūroje, mokymuose, rengia straipsnius ir
-                    pranešimus. Per šį laikotarpį įgijome unikalių žinių bei patirties, reikalingos įgyvendinant tiek turistų,
-                    tiek turizmo paslaugų teikėjų interesus. Siekiant optimizuoti turistų patirtų nepatogumų bei nuostolių
-                    struktūrą, esame sukūrę elektroninį įrankį,- www.kelioniuadvokatas.lt, kuriuo pagalba turistai nepatirdami 
-                    ženklių laiko sąnaudų, gali deleguoti mums turizmo sferoje kilusias problemas, kurių nagrinėjimo ir sprendimų 
-                    operatyvumu ir efektyvumu esame garantuoti.
-                </p>
-                <div class="btn2">Plačiau</div>
+        <div class="whyMy">
+            <h3 class="whyMyHead">Kodėl mes?</h3>
+            <div class="whyMyClients">
+                <i class="fa fa-suitcase"></i>
+                <div class="clientsTxt">Krepėsi keliautojų:</div>
+                <div class="clientsNumber" id="clientsNumber">0</div>
+            </div>
+            <div class="suitcase">
+                <i class="fa fa-thumbs-up"></i>
+                <div class="clientsTxt">Laimėta bylų:</div>
+                <div class="clientsNumber" id="clientsWin">0</div>
+            </div>
+            <div class="money">
+                <i class="fa fa-euro"></i>
+                <div class="clientsTxt">Išieškota pinigų suma:</div>
+                <div class="clientsNumber" id="clientsMoney">0</div>
             </div>
         </div>
         <div class="testimonials">APIE MUS</div>
@@ -79,5 +76,6 @@
     </div>
     <script src="./js/functions.js"></script>
     <script src="./js/actions.js"></script>
+    <script src="./js/timer.js"></script>
 </body>
 </html>
