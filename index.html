@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kelionių advokatas</title>
+    <link rel = "icon" type = "image/png" href = "./img/Ico.png">
     <link href="https://fonts.googleapis.com/css?family=Saira:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
@@ -15,7 +17,7 @@
         <nav class="links">
             <a class="headers-links" href="#apie-mus">Apie mus</a>
             <a class="headers-links" href="#atsiliepimai">Atsiliepimai</a>
-            <a class="headers-links" href="#patirtis">Patirtis</a>
+            <a class="headers-links" href="#patirtis">Blogas</a>
             <a class="headers-links" href="#kontaktai">Kontaktai</a>
         </nav>
     </header>
@@ -49,13 +51,31 @@
                 <div class="btn">Rašyti</div>
             </div>
         </main>
-        <div class="about">KAS MES?</div>
+        <div class="whyMy">
+            <h3 class="whyMyHead">Kodėl mes?</h3>
+            <div class="whyMyClients">
+                <i class="fa fa-suitcase"></i>
+                <div class="clientsTxt">Krepėsi keliautojų:</div>
+                <div class="clientsNumber" id="clientsNumber">0</div>
+            </div>
+            <div class="suitcase">
+                <i class="fa fa-thumbs-up"></i>
+                <div class="clientsTxt">Laimėta bylų:</div>
+                <div class="clientsNumber" id="clientsWin">0</div>
+            </div>
+            <div class="money">
+                <i class="fa fa-euro"></i>
+                <div class="clientsTxt">Išieškota pinigų suma:</div>
+                <div class="clientsNumber" id="clientsMoney">0</div>
+            </div>
+        </div>
         <div class="testimonials">APIE MUS</div>
-        <div class="experience">MŪSŲ PATIRTIS</div>
+        <div class="experience">BLOGAS</div>
         <div class="service">APIE PASLAUGĄ IR SAUGUMAS</div>
         <footer class="contacts">KONTAKTAI</footer>
     </div>
     <script src="./js/functions.js"></script>
     <script src="./js/actions.js"></script>
+    <script src="./js/timer.js"></script>
 </body>
 </html>
