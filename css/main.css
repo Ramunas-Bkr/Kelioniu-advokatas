@@ -11,7 +11,7 @@ body * {
 .first-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: " . blocks . " " . about . " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
+      grid-template-areas: " . blocks . " " whymy whymy whymy " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
   -ms-grid-columns: 1fr 1100px 1fr;
       grid-template-columns: 1fr 1100px 1fr;
 }
@@ -53,7 +53,7 @@ body * {
 }
 
 .first-grid main .block1 h3 {
-  color: #f6b501;
+  color: #4162dd;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -92,7 +92,7 @@ body * {
 }
 
 .first-grid main .block2 h3 {
-  color: #f6b501;
+  color: #4162dd;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -131,7 +131,7 @@ body * {
 }
 
 .first-grid main .block3 h3 {
-  color: #f6b501;
+  color: #4162dd;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -145,12 +145,115 @@ body * {
   margin: 10px 5px;
 }
 
-.first-grid .about {
+.first-grid .whyMy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: whymy;
+      grid-template-areas: "whyhead whyhead whyhead whyhead whyhead" ". clients case money .";
+  -ms-grid-columns: 1fr 20% 20% 20% 1fr;
+      grid-template-columns: 1fr 20% 20% 20% 1fr;
+  background-color: #4162dd;
+  padding: 30px 0;
+}
+
+.first-grid .whyMy .whyMyHead {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: whyhead;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+.first-grid .whyMy .whyMyClients {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: about;
+  grid-area: clients;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.first-grid .whyMy .whyMyClients .fa {
+  color: #fff;
+  font-size: 60px;
+}
+
+.first-grid .whyMy .whyMyClients .clientsTxt {
+  color: #fff;
+  font-size: 24px;
+}
+
+.first-grid .whyMy .whyMyClients .clientsNumber {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.first-grid .whyMy .suitcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: case;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.first-grid .whyMy .suitcase .fa {
+  color: #fff;
+  font-size: 60px;
+}
+
+.first-grid .whyMy .suitcase .clientsTxt {
+  color: #fff;
+  font-size: 24px;
+}
+
+.first-grid .whyMy .suitcase .clientsNumber {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.first-grid .whyMy .money {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: money;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.first-grid .whyMy .money .fa {
+  color: #fff;
+  font-size: 60px;
+}
+
+.first-grid .whyMy .money .clientsTxt {
+  color: #fff;
+  font-size: 24px;
+}
+
+.first-grid .whyMy .money .clientsNumber {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 30px;
 }
 
 .first-grid .testimonials {
@@ -187,10 +290,11 @@ body * {
 }
 
 .btn {
-  background-color: #f6b501;
-  color: #1d1d1d;
+  background-color: #4162dd;
+  text-align: center;
+  color: white;
   margin: 30px 80px;
-  padding: 10px 30px;
+  padding: 10px 0px;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
@@ -202,6 +306,28 @@ body * {
 }
 
 .btn:hover {
+  background-color: #000;
+  -webkit-box-shadow: 5px 5px 10px #rgba 0, 0, 0, 0.5;
+          box-shadow: 5px 5px 10px #rgba 0, 0, 0, 0.5;
+}
+
+.btn2 {
+  background-color: #4162dd;
+  text-align: center;
+  color: #1d1d1d;
+  padding: 10px 30px;
+  margin: 0px 240px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: background-color, -webkit-box-shadow 0.7s;
+  transition: background-color, -webkit-box-shadow 0.7s;
+  transition: background-color, box-shadow 0.7s;
+  transition: background-color, box-shadow 0.7s, -webkit-box-shadow 0.7s;
+  cursor: pointer;
+}
+
+.btn2:hover {
   background-color: #000;
   color: #f6b501;
   -webkit-box-shadow: 5px 5px 10px #rgba 0, 0, 0, 0.5;
@@ -238,7 +364,7 @@ header nav .headers-links {
   font-size: 20px;
   line-height: 20px;
   font-weight: 600;
-  color: #f6b501;
+  color: white;
   -webkit-transition: color .5s ease;
   transition: color .5s ease;
   position: relative;
@@ -267,7 +393,7 @@ header nav .headers-links:hover:hover:after {
 }
 
 .sticky {
-  background-color: #f6b501;
+  background-color: #4162dd;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
@@ -278,7 +404,7 @@ header nav .headers-links:hover:hover:after {
 }
 
 .sticky .headers-links {
-  color: #1d1d1d;
+  color: white;
 }
 
 .hero {
@@ -296,7 +422,7 @@ header nav .headers-links:hover:hover:after {
 .hero h2 {
   display: inline-block;
   width: 70%;
-  color: #f6b501;
+  color: white;
   font-size: 40px;
   padding-top: 200px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
@@ -305,7 +431,7 @@ header nav .headers-links:hover:hover:after {
 .hero h1 {
   display: inline-block;
   width: 70%;
-  color: #f6b501;
+  color: white;
   font-size: 60px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
