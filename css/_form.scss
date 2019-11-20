@@ -29,7 +29,7 @@
     display: grid;
     grid-template-areas: 
     " . blocks . "
-    " whymy whymy whymy "
+    " whywe whywe whywe "
     " . testimonials . "
     " . experience . "
     " . service . "
@@ -55,7 +55,7 @@
             }
     }
 
-@mixin whyMyBlocks ($area) {
+@mixin whyWeBlocks ($area) {
         display: grid;
         grid-area: $area;
         text-align: center;
@@ -77,9 +77,9 @@
         }
     }
 
-    .whyMy {
+    .whyWe {
         display: grid;
-        grid-area: whymy;
+        grid-area: whywe;
         grid-template-areas:
         "whyhead whyhead whyhead whyhead whyhead"
         ". clients case money .";
@@ -87,7 +87,7 @@
         background-color: $blueColor;
         padding: 30px 0;
 
-            .whyMyHead {
+            .whyWeHead {
                 display: grid;
                 grid-area: whyhead;
                 font-size: 35px;
@@ -95,20 +95,120 @@
                 font-weight: 600;
                 color: #fff;
             }
-            .whyMyClients {
-                @include whyMyBlocks (clients);           
+            .whyWeClients {
+                @include whyWeBlocks (clients);           
             }
             .suitcase {
-                @include whyMyBlocks (case);
+                @include whyWeBlocks (case);
             }
             .money {
-                @include whyMyBlocks (money);
+                @include whyWeBlocks (money);
             }
         }
 
     .testimonials {
         display: grid;
         grid-area: testimonials;
+        margin: 35px 0;
+
+        .testimonial-head {
+            display: inline-block;
+            width: 100%;
+            color: $blueColor;
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+            margin: 35px 0;
+        }
+        .testimonial-block {
+            display: inline-block;
+            width: 800px;
+            margin: 20px calc( 50% - 400px );
+            text-align: center;
+
+                .testimonial-box {
+                    display: inline-block;
+                    grid-area: box;
+                    background-color: #fff;
+                    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    position: relative;
+                    text-align: left;
+                    min-height: 350px;
+                        
+                    .box-photo {
+                            display: inline-block;
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            color: #fff;
+                            background-image: url(../img/Testimonials/IevaSabiene.jpg);
+                            background-size: cover;
+                            background-position: bottom center;
+                            margin-left: 30px;
+                            top: -50px;
+                            left: 0;
+                            position: absolute;
+                            
+                        }
+                        .box-quotes {
+                            display: inline-block;
+                            top: -30px;
+                            right: -10px;
+                            font-size: 160px;
+                            color: #dfdfdf;
+                            position: absolute;
+                            
+                        }
+
+                        .box-stars {
+                            display: inline-block;
+                            width: 100%;
+                            margin-left: 30px;
+                            margin-top: 70px;
+                            color: $yellowColor;
+                            
+                        }
+                        .box-name {
+                            display: inline-block;
+                            width: 100%;
+                            margin-left: 30px;
+                            
+                                h5 {
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                }
+                                h6 {
+                                    font-size: 15px;
+                                    font-weight: 200;
+                                    font-style: italic;
+                                }
+                                .testimonial-text {
+                                    color: gray;
+                                    padding: 30px 50px;
+
+                                }
+                        }
+                        
+                }
+            .testim-arrows {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 28px;
+                line-height: 30px;
+                margin: 30px 0;
+                cursor: pointer;
+                color: white;
+                 .fa {
+                     background-color: $blueColor;
+                     padding: 10px 13px;
+                     border-radius: 50%;
+                 }
+
+
+            }        
+        }
+
     }
     .experience {
         display: grid;

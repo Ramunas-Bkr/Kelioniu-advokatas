@@ -11,7 +11,7 @@ body * {
 .first-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: " . blocks . " " whymy whymy whymy " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
+      grid-template-areas: " . blocks . " " whywe whywe whywe " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
   -ms-grid-columns: 1fr 1100px 1fr;
       grid-template-columns: 1fr 1100px 1fr;
 }
@@ -145,13 +145,13 @@ body * {
   margin: 10px 5px;
 }
 
-.first-grid .whyMy {
+.first-grid .whyWe {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-area: whymy;
+  grid-area: whywe;
       grid-template-areas: "whyhead whyhead whyhead whyhead whyhead" ". clients case money .";
   -ms-grid-columns: 1fr 20% 20% 20% 1fr;
       grid-template-columns: 1fr 20% 20% 20% 1fr;
@@ -159,7 +159,7 @@ body * {
   padding: 30px 0;
 }
 
-.first-grid .whyMy .whyMyHead {
+.first-grid .whyWe .whyWeHead {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 1;
@@ -172,7 +172,7 @@ body * {
   color: #fff;
 }
 
-.first-grid .whyMy .whyMyClients {
+.first-grid .whyWe .whyWeClients {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 2;
@@ -182,17 +182,17 @@ body * {
   margin-top: 15px;
 }
 
-.first-grid .whyMy .whyMyClients .fa {
+.first-grid .whyWe .whyWeClients .fa {
   color: #fff;
   font-size: 60px;
 }
 
-.first-grid .whyMy .whyMyClients .clientsTxt {
+.first-grid .whyWe .whyWeClients .clientsTxt {
   color: #fff;
   font-size: 24px;
 }
 
-.first-grid .whyMy .whyMyClients .clientsNumber {
+.first-grid .whyWe .whyWeClients .clientsNumber {
   color: #fff;
   font-size: 60px;
   font-weight: 600;
@@ -200,7 +200,7 @@ body * {
   margin-bottom: 30px;
 }
 
-.first-grid .whyMy .suitcase {
+.first-grid .whyWe .suitcase {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 2;
@@ -210,17 +210,17 @@ body * {
   margin-top: 15px;
 }
 
-.first-grid .whyMy .suitcase .fa {
+.first-grid .whyWe .suitcase .fa {
   color: #fff;
   font-size: 60px;
 }
 
-.first-grid .whyMy .suitcase .clientsTxt {
+.first-grid .whyWe .suitcase .clientsTxt {
   color: #fff;
   font-size: 24px;
 }
 
-.first-grid .whyMy .suitcase .clientsNumber {
+.first-grid .whyWe .suitcase .clientsNumber {
   color: #fff;
   font-size: 60px;
   font-weight: 600;
@@ -228,7 +228,7 @@ body * {
   margin-bottom: 30px;
 }
 
-.first-grid .whyMy .money {
+.first-grid .whyWe .money {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 2;
@@ -238,17 +238,17 @@ body * {
   margin-top: 15px;
 }
 
-.first-grid .whyMy .money .fa {
+.first-grid .whyWe .money .fa {
   color: #fff;
   font-size: 60px;
 }
 
-.first-grid .whyMy .money .clientsTxt {
+.first-grid .whyWe .money .clientsTxt {
   color: #fff;
   font-size: 24px;
 }
 
-.first-grid .whyMy .money .clientsNumber {
+.first-grid .whyWe .money .clientsNumber {
   color: #fff;
   font-size: 60px;
   font-weight: 600;
@@ -262,6 +262,106 @@ body * {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: testimonials;
+  margin: 35px 0;
+}
+
+.first-grid .testimonials .testimonial-head {
+  display: inline-block;
+  width: 100%;
+  color: #4162dd;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin: 35px 0;
+}
+
+.first-grid .testimonials .testimonial-block {
+  display: inline-block;
+  width: 800px;
+  margin: 20px calc( 50% - 400px);
+  text-align: center;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box {
+  display: inline-block;
+  grid-area: box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  text-align: left;
+  min-height: 350px;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-photo {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #fff;
+  background-image: url(../img/Testimonials/IevaSabiene.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  margin-left: 30px;
+  top: -50px;
+  left: 0;
+  position: absolute;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-quotes {
+  display: inline-block;
+  top: -30px;
+  right: -10px;
+  font-size: 160px;
+  color: #dfdfdf;
+  position: absolute;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-stars {
+  display: inline-block;
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 70px;
+  color: #f6b501;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-name {
+  display: inline-block;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-name h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-name h6 {
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.first-grid .testimonials .testimonial-block .testimonial-box .box-name .testimonial-text {
+  color: gray;
+  padding: 30px 50px;
+}
+
+.first-grid .testimonials .testimonial-block .testim-arrows {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 30px;
+  margin: 30px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.first-grid .testimonials .testimonial-block .testim-arrows .fa {
+  background-color: #4162dd;
+  padding: 10px 13px;
+  border-radius: 50%;
 }
 
 .first-grid .experience {
