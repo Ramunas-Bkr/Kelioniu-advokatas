@@ -2,7 +2,7 @@ let clientsNumbers = setInterval ("numbersClients()", 1);
 let clients = 120;
 
 function numbersClients () {
-    if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1150)
+    if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250)
     {
         clients ++;
         document.getElementById('clientsNumber').innerHTML = clients;
@@ -14,7 +14,7 @@ let clientsWins = setInterval ("clientWins()", 1);
 let wins = 80;
 
 function clientWins () {
-    if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1150)
+    if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250)
     {
         wins ++;
         document.getElementById('clientsWin').innerHTML = wins;
@@ -28,7 +28,7 @@ let moneySmall = 421;
 let HTML = "0";
 
 function clientMoney () {
-    if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1150)
+    if (document.body.scrollTop > 1250 || document.documentElement.scrollTop > 1250)
     {
         moneyBig ++;
         moneySmall ++;
