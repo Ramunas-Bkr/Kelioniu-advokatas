@@ -6,12 +6,20 @@ body * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Saira', sans-serif;
+  
 }
+
+
 
 .first-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: " . blocks . " " whywe whywe whywe " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
+      grid-template-areas: " . blocks . "
+ " whywe whywe whywe "
+ " . testimonials . "
+ " . experience . "
+ " . service . "
+ " contacts contacts contacts ";
   -ms-grid-columns: 1fr 1100px 1fr;
       grid-template-columns: 1fr 1100px 1fr;
 }
@@ -152,7 +160,8 @@ body * {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: whywe;
-      grid-template-areas: "whyhead whyhead whyhead whyhead whyhead" ". clients case money .";
+      grid-template-areas: "whyhead whyhead whyhead whyhead whyhead"
+ ". clients case money .";
   -ms-grid-columns: 1fr 20% 20% 20% 1fr;
       grid-template-columns: 1fr 20% 20% 20% 1fr;
   background-color: #4162dd;
@@ -283,7 +292,8 @@ body * {
 }
 
 .first-grid .testimonials .testimonial-block .testimonial-box {
-  display: inline-block;
+  display: none;
+  width: 100%;
   grid-area: box;
   background-color: #fff;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -299,7 +309,6 @@ body * {
   width: 100px;
   border-radius: 50%;
   color: #fff;
-  background-image: url(../img/Testimonials/IevaSabiene.jpg);
   background-size: cover;
   background-position: bottom center;
   margin-left: 30px;
@@ -347,7 +356,7 @@ body * {
   padding: 30px 50px;
 }
 
-.first-grid .testimonials .testimonial-block .testim-arrows {
+.first-grid .testimonials .testim-arrows {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -358,10 +367,12 @@ body * {
   color: white;
 }
 
-.first-grid .testimonials .testimonial-block .testim-arrows .fa {
+.first-grid .testimonials .testim-arrows .fa {
   background-color: #4162dd;
   padding: 10px 13px;
   border-radius: 50%;
+  border: solid 5px #809bfa;
+  margin: 0 5px;
 }
 
 .first-grid .experience {

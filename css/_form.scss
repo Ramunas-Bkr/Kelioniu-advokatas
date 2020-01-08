@@ -127,7 +127,8 @@
             text-align: center;
 
                 .testimonial-box {
-                    display: inline-block;
+                    display: none;
+                    width: 100%;
                     grid-area: box;
                     background-color: #fff;
                     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -141,7 +142,7 @@
                             width: 100px;
                             border-radius: 50%;
                             color: #fff;
-                            background-image: url(../img/Testimonials/IevaSabiene.jpg);
+                            //background-image: url(../img/Testimonials/IevaSabiene.jpg);
                             background-size: cover;
                             background-position: bottom center;
                             margin-left: 30px;
@@ -190,6 +191,7 @@
                         }
                         
                 }
+            }
             .testim-arrows {
                 display: inline-block;
                 width: 100%;
@@ -203,13 +205,13 @@
                      background-color: $blueColor;
                      padding: 10px 13px;
                      border-radius: 50%;
+                     border: solid 5px #809bfa;
+                     margin: 0 5px;
                  }
 
 
             }        
-        }
-
-    }
+       }
     .experience {
         display: grid;
         grid-area: experience;
