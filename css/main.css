@@ -6,20 +6,16 @@ body * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Saira', sans-serif;
-  
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 .first-grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: " . blocks . "
- " whywe whywe whywe "
- " . testimonials . "
- " . experience . "
- " . service . "
- " contacts contacts contacts ";
+      grid-template-areas: " . blocks . " " whywe whywe whywe " " . testimonials . " " . experience . " " . service . " " contacts contacts contacts ";
   -ms-grid-columns: 1fr 1100px 1fr;
       grid-template-columns: 1fr 1100px 1fr;
 }
@@ -160,8 +156,7 @@ body * {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: whywe;
-      grid-template-areas: "whyhead whyhead whyhead whyhead whyhead"
- ". clients case money .";
+      grid-template-areas: "whyhead whyhead whyhead whyhead whyhead" ". clients case money .";
   -ms-grid-columns: 1fr 20% 20% 20% 1fr;
       grid-template-columns: 1fr 20% 20% 20% 1fr;
   background-color: #4162dd;
@@ -803,5 +798,61 @@ header nav .headers-links:hover:hover:after {
   100% {
     opacity: 1;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal .modal-content {
+  margin: 150px auto;
+  background-color: #fff;
+  padding: 20px;
+  width: 40%;
+  z-index: 200;
+}
+
+.modal .modal-content .close_modal_window {
+  margin-top: -40px;
+  color: #797676;
+  float: right;
+  top: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.modal .modal-content .input-zone {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.modal .modal-content .input-zone p {
+  margin: 0 auto;
+}
+
+.modal .modal-content .input-zone input {
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid lightgrey;
+}
+
+.modal .modal-content .input-zone textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  border: 1px solid lightgrey;
+}
+
+.modal .modal-content .input-zone .btn {
+  width: 100px;
 }
 /*# sourceMappingURL=main.css.map */
