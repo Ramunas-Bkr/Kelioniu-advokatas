@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kelionių advokatas</title>
-    <link rel = "icon" type = "image/png" href = "./img/Ico.png">
+    <link rel="icon" type="image/png" href="./img/Ico.png">
     <link href="https://fonts.googleapis.com/css?family=Saira:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header id="header">
-        <img src="./img/Kelioniu advokatas.jpg" alt="Logo">
+        <a href="#"> <img src="./img/Kelioniu advokatas.jpg" alt="Logo"> </a>
         <nav class="links">
-            <a class="headers-links" href="#apie-mus">Apie mus</a>
+            <a class="headers-links" href="#blocks">Pildyti formą</a>
             <a class="headers-links" href="#atsiliepimai">Atsiliepimai</a>
-            <a class="headers-links" href="#patirtis">Blogas</a>
+            <a class="headers-links" href="#blogas">Blogas</a>
             <a class="headers-links" href="#kontaktai">Kontaktai</a>
         </nav>
     </header>
@@ -24,33 +26,52 @@
         <h2>Kelionės vėlavimai, nuostoliai, nesklandumai?</h2>
         <h1>Gaukite kompensaciją!</h1>
         <div class="arrows">
-                <a href="#" target="_blank" class="arrow1 fa fa-chevron-down"></a>
-                <a href="#" target="_blank" class="arrow2 fa fa-chevron-down"></a>
-                <a href="#" target="_blank" class="arrow3 fa fa-chevron-down"></a>
+            <a href="#blocks" class="arrow1 fa fa-chevron-down"></a>
+            <a href="#blocks" class="arrow2 fa fa-chevron-down"></a>
+            <a href="#blocks" class="arrow3 fa fa-chevron-down"></a>
         </div>
     </div>
     <div class="first-grid">
-        <main class="blocks">
+        <main class="blocks" id="blocks">
             <div class="block1">
                 <a href="#" class="main-images"><img src="./img/main5.jpg"></a>
                 <h3>Patyrėte nuostolių kelionėje?</h3>
                 <p>Trumpai aprašykite problemą ir mes su jumis susisieksime</p>
-                <div class="btn">Rašyti</div>
+                <div class="btn" id="btn1">Rašyti</div>
             </div>
             <div class="block2">
                 <a href="#" class="main-images"><img src="./img/main1.jpg"></a>
                 <h3>Skrydis vėlavo ir buvo atšauktas?</h3>
                 <p>Nurodykite aviakompaniją, skrydžio numerį ir mes su jumis susisieksime</p>
-                <div class="btn">Rašyti</div>
+                <div class="btn" id="btn2">Rašyti</div>
             </div>
             <div class="block3">
                 <a href="#" class="main-images"><img src="./img/main3.jpg"></a>
                 <h3>Pirkote kelionę ir likote nepatenkintas?</h3>
                 <p>Nurodykite kelionių agentūrą, trumpai aprašykite nesklandumus ir mes su jumis susisieksime</p>
-                <div class="btn">Rašyti</div>
+                <div class="btn" id="btn3">Rašyti</div>
             </div>
         </main>
-        <div class="whyWe">
+        <div class="modal" id="mymodal">
+            <div class="modal-content">
+                <span class="close_modal_window" id="close_modal_window">&times;</span>
+                <div class="input-zone">
+                    <form action="">
+                        <p>Įveskite savo elektronino pašto adresą</p>
+                        <input type="email" id="email" name="email">
+                        <p>Įveskite savo telefono numerį</p>
+                        <input type="tel" id="phone" name="phone" placeholder="+37012312345" pattern="+[0-9]{11}">
+                        <p>Trumpai aprašykite savo problemą</p>
+                        <textarea name="problems" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" class="btn" value="Siųsti" id="btn-sent">
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- <div class="whyWe">
             <h3 class="whyWeHead">Kodėl mes?</h3>
             <div class="whyWeClients">
                 <i class="fa fa-suitcase"></i>
@@ -67,14 +88,14 @@
                 <div class="clientsTxt">Išieškota pinigų suma:</div>
                 <div class="clientsNumber" id="clientsMoney">0</div>
             </div>
-        </div>
-        <div class="testimonials">
+        </div> -->
+        <div class="testimonials" id="atsiliepimai">
             <div class="testimonial-head">
-                Klientų atsiliepimai
+                <h3>Klientų atsiliepimai</h3>
             </div>
             <div class="testimonial-block" id="testimonials">
                 <!-- <div class="testimonial-box"> -->
-                    <!-- <div class="box-photo" style="background-image: url(../img/Testimonials/IevaSabiene.jpg);"></div>
+                <!-- <div class="box-photo" style="background-image: url(../img/Testimonials/IevaSabiene.jpg);"></div>
                     <div class="box-stars">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -101,18 +122,27 @@
                 <i class="fa fa-arrow-left" onclick="plusSlides(-1)"></i>
                 <i class="fa fa-arrow-right" onclick="plusSlides(1)"></i>
             </div>
-            
-            </div>
+
         </div>
-        <div class="experience">BLOGAS</div>
-        <div class="service">APIE PASLAUGĄ IR SAUGUMAS</div>
-        <footer class="contacts">KONTAKTAI</footer>
+    </div>
+    <div class="blog">
+        <div class="blog-head">
+            <h3>Blogas</h3>
+        </div>
+        <div class="blog-block">
+
+        </div>
+
+    </div>
+    <div class="service">APIE PASLAUGĄ IR SAUGUMAS</div>
+    <footer class="contacts">KONTAKTAI</footer>
     </div>
     <script src="./js/data.js"></script>
     <script src="./js/functions.js"></script>
     <script src="./js/timer.js"></script>
     <script src="./js/actions.js"></script>
-    
-    
+
+
 </body>
+
 </html>
