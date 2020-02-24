@@ -64,20 +64,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "inline-block";
 }
 
-
-// let testimonialTaimer = setInterval("testimTaimer()", 1200);
-
-// function testimTaimer(n) {
-
-//     let slides = document.getElementsByClassName("testimonial-box");
-//     if (n > slides.length) { slideIndex = 1 }
-//     if (n < 1) { slideIndex = slides.length }
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slides[slideIndex - 1].style.display = "inline-block";
-// }
-
 let btn = document.querySelectorAll(".btn");
 let modal = document.getElementById("mymodal");
 let close = document.getElementById("close_modal_window");
