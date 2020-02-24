@@ -78,15 +78,13 @@ function showSlides(n) {
 //     slides[slideIndex - 1].style.display = "inline-block";
 // }
 
-let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
+let btn = document.querySelectorAll(".btn");
 let modal = document.getElementById("mymodal");
 let close = document.getElementById("close_modal_window");
 
-btn1.onclick = display;
-btn2.onclick = display;
-btn3.onclick = display;
+for (let i = 0; i < btn.length; i++) {
+    btn[i].onclick = display;
+}
 
 function display() {
     modal.style.display = "block";
