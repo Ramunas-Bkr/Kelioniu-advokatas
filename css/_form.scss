@@ -182,6 +182,9 @@
                         top: -50px;
                         left: 0;
                         position: absolute;
+                        img {
+                            overflow: hidden;
+                        }
                     }
                     .box-quotes {
                         display: inline-block;
