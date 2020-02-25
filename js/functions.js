@@ -1,3 +1,5 @@
+//changing header on scroll START
+
 let header = document.getElementById("header");
 let sticky = header.offsetTop;
 
@@ -9,7 +11,9 @@ function myFunction() {
     }
 }
 
+//changing header on scroll END
 
+//rendering testimonials START
 function renderTestimonial(data) {
 
     let HTML = '';
@@ -42,6 +46,9 @@ function renderTestimonial(data) {
     return document.getElementById('testimonials').innerHTML = HTML;
 }
 
+//rendering testimonials START
+
+//slider with arrows START
 
 let slideIndex = 1;
 
@@ -65,6 +72,10 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "inline-block";
 }
 
+//slider with arrows END
+
+
+//modal window with input zone START
 let btn = document.querySelectorAll(".btn");
 let modal = document.getElementById("mymodal");
 let close = document.getElementById("close_modal_window");
@@ -94,3 +105,23 @@ btn_sent.onclick = function() {
     alert('Ačiū, netrukus susisieksmime');
 
 }
+
+//modal window END
+
+//testimonials carousel with timer START
+
+var myIndex = 0;
+
+function carousel() {
+    let i;
+    let x = document.getElementsByClassName("testimonial-box");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+//testimonials corousel END

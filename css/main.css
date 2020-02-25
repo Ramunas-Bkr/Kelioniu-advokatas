@@ -201,6 +201,10 @@ html {
   position: absolute;
 }
 
+.first-grid .testimonials .testimonial-block .testimonial-box .box-photo img {
+  overflow: hidden;
+}
+
 .first-grid .testimonials .testimonial-block .testimonial-box .box-quotes {
   display: inline-block;
   top: -30px;
