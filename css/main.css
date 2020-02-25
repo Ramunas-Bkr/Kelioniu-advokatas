@@ -1251,4 +1251,12 @@ main .service-txt li {
 main .service-txt li .circle {
   margin-left: 30px;
 }
+
+main .service-txt ol {
+  margin-left: 12px;
+}
+
+main .service-txt ol li ol {
+  margin-left: 45px;
+}
 /*# sourceMappingURL=main.css.map */
