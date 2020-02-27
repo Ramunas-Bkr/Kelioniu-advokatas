@@ -23,7 +23,7 @@ function renderTestimonial(data) {
 
 
         HTML += `<div class="testimonial-box">
-    <div class="box-photo" style="background-image: url(../img/${obj.photo});"></div>
+    <div class="box-photo" style="background-image: url(img/${obj.photo});"></div>
     <div class="box-stars">
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
