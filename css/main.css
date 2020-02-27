@@ -57,7 +57,7 @@ html {
 }
 
 .first-grid main .block1 h3 {
-  color: #4162dd;
+  color: #0d2886;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -96,7 +96,7 @@ html {
 }
 
 .first-grid main .block2 h3 {
-  color: #4162dd;
+  color: #0d2886;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -135,7 +135,7 @@ html {
 }
 
 .first-grid main .block3 h3 {
-  color: #4162dd;
+  color: #0d2886;
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
@@ -161,7 +161,7 @@ html {
 .first-grid .testimonials .testimonial-head {
   display: inline-block;
   width: 100%;
-  color: #4162dd;
+  color: #0d2886;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
@@ -256,7 +256,7 @@ html {
 }
 
 .first-grid .testimonials .testim-arrows .fa {
-  background-color: #4162dd;
+  background-color: #0d2886;
   padding: 10px 13px;
   border-radius: 50%;
   border: solid 5px #809bfa;
@@ -281,7 +281,7 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: blog-head;
-  color: #4162dd;
+  color: #0d2886;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
@@ -660,7 +660,7 @@ html {
 }
 
 .btn {
-  background-color: #4162dd;
+  background-color: #0d2886;
   text-align: center;
   color: white;
   margin: 30px 80px;
@@ -682,7 +682,7 @@ html {
 }
 
 .btn2 {
-  background-color: #4162dd;
+  background-color: #0d2886;
   text-align: center;
   color: #1d1d1d;
   padding: 10px 30px;
@@ -762,8 +762,12 @@ header nav .headers-links:hover:hover:after {
   opacity: 1;
 }
 
+header .mob-links {
+  display: none;
+}
+
 .sticky {
-  background-color: #4162dd;
+  background-color: #0d2886;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
@@ -783,7 +787,7 @@ header nav .headers-links:hover:hover:after {
   position: fixed;
   height: 70px;
   z-index: 9;
-  background-color: #4162dd;
+  background-color: #0d2886;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
@@ -1137,7 +1141,7 @@ header nav .headers-links:hover:hover:after {
 }
 
 footer {
-  background-color: #4162dd;
+  background-color: #0d2886;
   text-align: center;
   color: white;
 }
@@ -1262,5 +1266,15 @@ main .service-txt ol {
 
 main .service-txt ol li ol {
   margin-left: 45px;
+}
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
+  .mob-links {
+    display: block;
+    float: right;
+  }
 }
 /*# sourceMappingURL=main.css.map */
