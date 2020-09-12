@@ -171,7 +171,7 @@ html {
 .first-grid .testimonials .testimonial-block {
   display: inline-block;
   width: 800px;
-  margin: 20px calc( 50% - 400px);
+  margin: 20px calc(50% - 400px);
   text-align: center;
 }
 
@@ -185,6 +185,8 @@ html {
   position: relative;
   text-align: left;
   min-height: 350px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 .first-grid .testimonials .testimonial-block .testimonial-box .box-photo {
@@ -1275,13 +1277,40 @@ main .service-txt ol li ol {
   margin-left: 45px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
+  .first-grid {
+    -ms-grid-columns: 1fr 11fr 1fr;
+        grid-template-columns: 1fr 11fr 1fr;
+  }
+  .first-grid main {
+        grid-template-areas: ". block1 . block2 .";
+    -ms-grid-columns: 1fr 5fr 1fr 5fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+  }
+  .first-grid main .block3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
   .links {
     display: none;
   }
   .mob-links {
     display: block;
     float: right;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+  .hero h1 {
+    font-size: 40px;
   }
 }
 
