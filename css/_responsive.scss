@@ -1,9 +1,53 @@
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
+    .first-grid {
+        grid-template-columns: 1fr 11fr 1fr;
+        main {
+            grid-template-areas: ". block1 . block2 .";
+            grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+            .block3 {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
     .links {
         display: none;
     }
     .mob-links {
         display: block;
         float: right;
+    }
+}
+
+// @media (max-width: 800px) {
+//         .first-grid {
+//         main {
+//             grid-template-areas: ". block1 . ";
+//             grid-template-columns: 1fr 6fr 1fr;
+//             .block2 {
+//                 display: none;
+//             }
+//             .block3 {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 600px) {
+    header {
+        img {
+            text-align: center;
+        }
+    }
+    .hero {
+        h2 {
+            font-size: 30px;
+        }
+        h1 {
+            font-size: 40px;
+        }
     }
 }
