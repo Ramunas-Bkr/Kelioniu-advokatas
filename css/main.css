@@ -16,8 +16,8 @@ html {
   display: -ms-grid;
   display: grid;
       grid-template-areas: " . blocks . " " . testimonials . " " . blog . " " contacts contacts contacts ";
-  -ms-grid-columns: 1fr 1100px 1fr;
-      grid-template-columns: 1fr 1100px 1fr;
+  -ms-grid-columns: 1fr 80% 1fr;
+      grid-template-columns: 1fr 80% 1fr;
 }
 
 .first-grid main {
@@ -271,9 +271,9 @@ html {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: blog;
-      grid-template-areas: " blog-head blog-head blog-head blog-head blog-head " " blog-block1 . blog-block2 . blog-block3 ";
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-      grid-template-columns: 1fr 20px 1fr 20px 1fr;
+      grid-template-areas: " blog-head blog-head blog-head blog-head blog-head "  " blog-block1 . blog-block2 . blog-block3 ";
+  -ms-grid-columns: 30% 20px 30% 20px 30%;
+      grid-template-columns: 30% 20px 30% 20px 30%;
 }
 
 .first-grid .blog .blog-head {
@@ -1278,14 +1278,10 @@ main .service-txt ol li ol {
 }
 
 @media (max-width: 1150px) {
-  .first-grid {
-    -ms-grid-columns: 1fr 11fr 1fr;
-        grid-template-columns: 1fr 11fr 1fr;
-  }
   .first-grid main {
-        grid-template-areas: ". block1 . block2 .";
-    -ms-grid-columns: 1fr 5fr 1fr 5fr 1fr;
-        grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+        grid-template-areas: '. block1 . block2 .';
+    -ms-grid-columns: 1fr 40% 1fr 40% 1fr;
+        grid-template-columns: 1fr 40% 1fr 40% 1fr;
   }
   .first-grid main .block3 {
     display: none;
@@ -1300,6 +1296,24 @@ main .service-txt ol li ol {
     display: block;
     float: right;
   }
+  .first-grid .testimonials .testimonial-block {
+    width: 600px;
+    margin: 20px calc(50% - 300px);
+  }
+}
+
+@media (max-width: 720px) {
+  .first-grid main {
+        grid-template-areas: '. block1 . ';
+    -ms-grid-columns: 1fr 80% 1fr;
+        grid-template-columns: 1fr 80% 1fr;
+  }
+  .first-grid main .block2 {
+    display: none;
+  }
+  .first-grid main .block3 {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1311,6 +1325,10 @@ main .service-txt ol li ol {
   }
   .hero h1 {
     font-size: 40px;
+  }
+  .first-grid .testimonials .testimonial-block {
+    width: 400px;
+    margin: 20px calc(50% - 200px);
   }
 }
 
