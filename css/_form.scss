@@ -245,7 +245,7 @@
         grid-template-areas: 
         " blog-head blog-head blog-head blog-head blog-head " 
         " blog-block1 . blog-block2 . blog-block3 ";
-        grid-template-columns: 30% 20px 30% 20px 30%;
+        grid-template-columns: 33% 1fr 33% 1fr 33%;
         .blog-head {
             display: grid;
             grid-area: blog-head;
