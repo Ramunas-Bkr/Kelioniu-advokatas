@@ -124,7 +124,7 @@
 .first-grid {
     display: grid;
     grid-template-areas: " . blocks . " " . testimonials . " " . blog . " " contacts contacts contacts ";
-    grid-template-columns: 1fr 1100px 1fr;
+    grid-template-columns: 1fr 80% 1fr;
     main {
         display: grid;
         grid-area: blocks;
@@ -242,8 +242,10 @@
     .blog {
         display: grid;
         grid-area: blog;
-        grid-template-areas: " blog-head blog-head blog-head blog-head blog-head " " blog-block1 . blog-block2 . blog-block3 ";
-        grid-template-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-areas: 
+        " blog-head blog-head blog-head blog-head blog-head " 
+        " blog-block1 . blog-block2 . blog-block3 ";
+        grid-template-columns: 33% 1fr 33% 1fr 33%;
         .blog-head {
             display: grid;
             grid-area: blog-head;
