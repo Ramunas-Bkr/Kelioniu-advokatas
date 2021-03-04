@@ -747,6 +747,7 @@ header nav .headers-links {
   -webkit-transition: color .5s ease;
   transition: color .5s ease;
   position: relative;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
 header nav .headers-links::after {
@@ -811,7 +812,7 @@ header .mob-links {
   width: 100%;
   text-align: center;
   z-index: 0;
-  background-image: url(../img/hero.jpg);
+  background-image: url(../img/nk-1-626.JPG);
   min-height: 100vh;
   background-size: cover;
   background-position: top center;
@@ -823,7 +824,7 @@ header .mob-links {
   width: 70%;
   color: white;
   font-size: 40px;
-  padding-top: 200px;
+  padding-top: 150px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
